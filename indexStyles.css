@@ -6,6 +6,13 @@ a {
     text-decoration: none;;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+    margin: 0px -10px;
+}
+
 .navbar_container {
     display: flex;
     justify-content: space-between;
@@ -29,51 +36,57 @@ a {
     text-align: center;
 }
 
-.navbar_item{
-    padding: 0px 20px;
-}
-
 .navbar_link {
     color: black;
-    font-size: 20px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    height: 100%;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 4px;
+    background: white;
+    white-space: nowrap;
+}
+
+.navbar_link:hover {
+    background: rgb(232, 232, 232);
+    transition: all 0.3s ease;
 }
 
 .navbar_btn {
     font-size: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5px;
+    padding: 0 10px;
     width: 100%;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+#locationDropdown {
     padding: 10px 0px;
-    height: 100%;
-    width: 100%;
+    width: 150px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
     border: none;
-    outline: none;
+    cursor: pointer;
+}
+
+#locationDropdown:hover {
+    background: rgb(232, 232, 232);
+    transition: all 0.3s ease;
+}
+
+option {
+    background: white;
+}
+
+.button {
+    padding: 10px 10px;
+    width: 100%;
     border-radius: 4px;
     background: red;
     color: white;
+    white-space: nowrap;
 }
 
 .button:hover {
     background: rgb(212, 0, 0);
-    transition: all 0.3s ease;
-}
-
-.navbar_link:hover {
-    color: red;
     transition: all 0.3s ease;
 }
 
