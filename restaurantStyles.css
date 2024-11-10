@@ -6,8 +6,16 @@ a {
     text-decoration: none;;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+    margin: 0px -8px;
+}
+
 .navbar_container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
@@ -50,7 +58,8 @@ a {
     width: 100%;
 }
 
-#locationDropdown {
+button {
+    background: white;
     padding: 10px 0px;
     width: 150px;
     border-radius: 4px;
@@ -58,15 +67,43 @@ a {
     font-family: "Times New Roman", Times, serif;
     border: none;
     cursor: pointer;
+    margin: auto;
 }
 
-#locationDropdown:hover {
+button:hover {
     background: rgb(232, 232, 232);
     transition: all 0.3s ease;
 }
 
-option {
-    background: white;
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    width: auto;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    width: auto;
 }
 
 .button {
@@ -81,4 +118,38 @@ option {
 .button:hover {
     background: rgb(212, 0, 0);
     transition: all 0.3s ease;
+}
+
+@media only screen and (min-width: 999px) {
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 998px) {
+    .navbar_container {
+        display: inline;
+    }
+
+    #navbar_logo {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .navbar_container {
+        display: inline;
+    }
+
+    #navbar_logo {
+        justify-content: center;
+    }
+
+    .navbar_menu {
+        display: inline;
+    }
+
+    .navbar_btn {
+        padding: 2px 0px;
+        width: 45%;
+        margin: auto;
+    }
 }
