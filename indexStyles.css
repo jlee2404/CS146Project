@@ -140,7 +140,6 @@ option {
     margin: auto 20px;
 }
 
-/* rules for desktops */
 @media only screen and (min-width: 999px) {
     .posts {
         flex-direction: column;
@@ -154,8 +153,7 @@ option {
     }
 }
 
-/* rules for tablets */
-@media only screen and (min-width: 400px) and (max-width: 998px) {
+@media only screen and (min-width: 600px) and (max-width: 998px) {
     .navbar_container {
         display: inline;
     }
@@ -183,8 +181,7 @@ option {
     }
 }
 
-/* rules for phones */
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 599px) {
     .navbar_container {
         display: inline;
     }
