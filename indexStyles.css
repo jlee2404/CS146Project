@@ -60,7 +60,7 @@ hr {
 
 #locationDropdown {
     padding: 10px 0px;
-    max-width: 150px;
+    width: 150px;
     border-radius: 4px;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
@@ -138,6 +138,11 @@ option {
 .descriptionText {
     color: black;
     margin: auto 20px;
+}
+
+#collegePic {
+    display: block;
+    padding: 0px 0px 30px 0px;
 }
 
 @media only screen and (min-width: 999px) {
@@ -222,5 +227,10 @@ option {
 
     section {
         padding: 0px 20px;
+    }
+
+    #collegePic {
+        width: 90%;
+        margin: auto;
     }
 }
