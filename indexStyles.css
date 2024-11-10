@@ -10,7 +10,7 @@ hr {
     border: none;
     height: 1px;
     background-color: lightgrey;
-    margin: 0px -10px;
+    margin: 0px -8px;
 }
 
 .navbar_container {
@@ -60,12 +60,13 @@ hr {
 
 #locationDropdown {
     padding: 10px 0px;
-    width: 150px;
+    max-width: 150px;
     border-radius: 4px;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
     border: none;
     cursor: pointer;
+    margin: auto;
 }
 
 #locationDropdown:hover {
@@ -156,41 +157,50 @@ option {
 /* rules for tablets */
 @media only screen and (min-width: 400px) and (max-width: 998px) {
     .navbar_container {
-        justify-content: center;
+        display: inline;
     }
 
     #navbar_logo {
-        font-size: auto;
+        justify-content: center;
     }
 
-    .posts {
-        flex-direction: column;
-        flex-wrap: wrap;
+    .picContent {
+        margin: auto;
+    }
+
+    section {
+        padding: 0px 20px;
     }
 
     .content {
         flex-direction: column;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     }
 
-    .post {
-        flex: 50%;
-    }
-
-    .post-pic {
-        width: 100%;
-        height: auto;
+    .content:hover {
+        background: rgb(235, 235, 235);
+        transition: all 0.3s ease;
     }
 }
 
 /* rules for phones */
 @media only screen and (max-width: 399px) {
-    header{
-        flex-direction: column;
-        text-align: center;
+    .navbar_container {
+        display: inline;
     }
 
-    .logo {
-        border-radius: 50%;
+    #navbar_logo {
+        justify-content: center;
+    }
+
+    .navbar_menu {
+        display: inline;
+    }
+
+    .navbar_btn {
+        padding: 2px 0px;
+        width: 45%;
+        margin: auto;
     }
 
     .posts {
@@ -198,12 +208,22 @@ option {
         flex-direction: column;
     }
 
-    .post-container {
+    .content {
         flex-direction: column;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     }
 
-    .post-pic {
-        width: 100%;
+    .content:hover {
+        background: rgb(235, 235, 235);
+        transition: all 0.3s ease;
+    }
+
+    .picContent {
+        width: 89%;
         height: auto;
+    }
+
+    section {
+        padding: 0px 20px;
     }
 }
