@@ -15,6 +15,7 @@ hr {
 
 .navbar_container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
@@ -95,6 +96,11 @@ option {
 
 }
 
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content {
     background-color: white;
     display: flex;
@@ -131,4 +137,73 @@ option {
 .descriptionText {
     color: black;
     margin: auto 20px;
+}
+
+/* rules for desktops */
+@media only screen and (min-width: 999px) {
+    .posts {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 800px;
+        flex: auto;
+    }
+}
+
+/* rules for tablets */
+@media only screen and (min-width: 400px) and (max-width: 998px) {
+    .navbar_container {
+        justify-content: center;
+    }
+
+    #navbar_logo {
+        font-size: auto;
+    }
+
+    .posts {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .post {
+        flex: 50%;
+    }
+
+    .post-pic {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* rules for phones */
+@media only screen and (max-width: 399px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        border-radius: 50%;
+    }
+
+    .posts {
+        flex-basis: auto;
+        flex-direction: column;
+    }
+
+    .post-container {
+        flex-direction: column;
+    }
+
+    .post-pic {
+        width: 100%;
+        height: auto;
+    }
 }
