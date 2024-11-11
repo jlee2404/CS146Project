@@ -122,15 +122,23 @@ button:hover {
 
 header {
     text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+header p {
+    text-align: left;
+    padding: 0px 10px;
 }
 
 .header-image {
-    height: 300px;
-    width: 500px;
+    max-height: 300px;
+    max-width: 500px;
+    padding-bottom: 10px;
 }
 
 .menu-section {
-    width: 500px;
+    width: 700px;
     margin: 5px auto;
     padding: 10px;
     border-radius: 10px;
@@ -139,6 +147,10 @@ header {
 
 .menu-section h2 {
     margin: auto auto 5px auto;
+}
+
+.menu-section h3 {
+    margin: 10px auto auto auto;
 }
 
 .menu-item {
@@ -182,6 +194,11 @@ h2 {
     padding: 0px 0px 10px 0px;
 }
 
+.centerText {
+    text-align: center;
+    height: 200px;
+}
+
 @media only screen and (min-width: 999px) {
     
 }
@@ -201,7 +218,7 @@ h2 {
     }
 
     .menu-section {
-        width: 70%;
+        width: 90%;
     }
 
     .review {
@@ -234,7 +251,7 @@ h2 {
     }
 
     .menu-section {
-        width: 70%;
+        width: 90%;
     }
 
     .review {
