@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>College Yelp</title>
+        <link rel="stylesheet" href="indexStyles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">College Yelp</a>
+                <ul class="navbar_menu">
+                    <li class="navbar_btn">
+                        <div class="dropdown">
+                            <button>Select College</button>
+                            <div class="dropdown-content">
+                              <a href="stevens.html">Stevens Institute of Technology</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar_btn"><a href="writeReview.html" class="navbar_link">Write a Review</a></li>
+                    <li class="navbar_btn"><a href="pageND.html" class="button">Log In</a></li>
+                    <li class="navbar_btn"><a href="pageND.html" class="button">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <form method="post" action="process.php">
+            <fieldset>
+                <legend>Review</legend>
+                <p>
+                    <label>Name: </label>
+                    <input type="text" name="name" placeholder="Enter your name or remain anonymous" pattern="[a-z]"/>
+                </p>
+                <p>
+                    <label>Dining Location: </label>
+                    <select name="where">
+                        <option>Choose a location</option>
+                        <option>Yellas Grill</option>
+                        <option>Piccola Italia</option>
+                        <option>Pom & Honey</option>
+                        <option>Tu Taco</option>
+                    </select>
+                </p>
+                <p>
+                    <textarea placeholder="Write a Review"></textarea>
+                </p>
+                <input type="submit" />
+            </fieldset>
+        </form>
