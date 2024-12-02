@@ -30,20 +30,26 @@
                 <legend>Review</legend>
                 <p>
                     <label>Name: </label>
-                    <input type="text" name="name" placeholder="Enter your name or remain anonymous" pattern="[a-z]"/>
+                    <input 
+                    type="text" 
+                    name="name" 
+                    id="reviewUsername"
+                    placeholder="Enter a username" 
+                    required
+                    />
                 </p>
                 <p>
                     <label>Dining Location: </label>
-                    <select name="where">
-                        <option>Choose a location</option>
-                        <option>Yellas Grill</option>
-                        <option>Piccola Italia</option>
-                        <option>Pom & Honey</option>
-                        <option>Tu Taco</option>
+                    <select id="reviewLocation" required>
+                        <option value="">Choose a location</option>
+                        <option value="Yellas">Yellas Grill</option>
+                        <option value="PiccolaItalia">Piccola Italia</option>
+                        <option value="PomHoney">Pom & Honey</option>
+                        <option value="TuTaco">Tu Taco</option>
                     </select>
                 </p>
                 <p>
-                    <textarea placeholder="Write a Review"></textarea>
+                    <textarea placeholder="Write a Review" id="reviewCaption" required></textarea>
                 </p>
                 <input type="submit" />
             </fieldset>
