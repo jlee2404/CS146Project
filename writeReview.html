@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>College Yelp</title>
+        <link rel="stylesheet" href="restaurantStyles.css">
+        <script type="text/javascript" src="./postReview.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">College Yelp</a>
+                <ul class="navbar_menu">
+                    <li class="navbar_btn">
+                        <div class="dropdown">
+                            <button>Select College</button>
+                            <div class="dropdown-content">
+                              <a href="stevens.html">Stevens Institute of Technology</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <form id="post">
+            <fieldset>
+                <legend>Review</legend>
+                <p>
+                    <label>Name: </label>
+                    <input 
+                    type="text" 
+                    name="name" 
+                    id="reviewUsername"
+                    placeholder="Enter a username" 
+                    required
+                    />
+                </p>
+                <p>
+                    <label>Dining Location: </label>
+                    <select id="reviewLocation" required>
+                        <option value="">Choose a location</option>
+                        <option value="yellas">Yellas Grill</option>
+                        <option value="piccolaItalia">Piccola Italia</option>
+                        <option value="pomHoney">Pom & Honey</option>
+                        <option value="tuTaco">Tu Taco</option>
+                    </select>
+                </p>
+                <p>
+                    <textarea placeholder="Write a Review" id="reviewCaption" required></textarea>
+                </p>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <section id="postList"></section>
+    </body>
+</html>

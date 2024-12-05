@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pom & Honey Reviews</title>
+        <link rel="stylesheet" href="restaurantStyles.css">
+        <script type="text/javascript" src="./postReview.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">College Yelp</a>
+                <ul class="navbar_menu">
+                    <li class="navbar_btn">
+                        <div class="dropdown">
+                            <button>Select College</button>
+                            <div class="dropdown-content">
+                              <a href="stevens.html">Stevens Institute of Technology</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <header>
+            <h1>Pom and Honey</h1>
+            <p>Pom & Honey is a flavorful and healthy experience featuring customizable and craveable
+                salads and grain bowls that feature delicous flavors, wholesome ingredients, bright spices, and it makes you feel great.</p>
+            <img class="header-image" src="https://api.dineoncampus.com/files/images/fac4e23e-d942-4b24-b660-3b8879c5baa3.png">
+        </header>
+
+        <!-- Menu -->
+        <div class="menu-section">
+            <h2>Menu</h2>
+            <div class="menu-type">
+                <h3>Entrees</h3>
+                <div class="menu-item">
+                    <div class="menu-title">Halal Chicken Bowl</div>
+                    <div class="menu-description">Build your own bowl with your choice of grains, proteins, and fresh toppings</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Falafel Bowl</div>
+                    <div class="menu-description">Build your own bowl with your choice of grains, proteins, and fresh toppings</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Spicy Meatball Bowl</div>
+                    <div class="menu-description">Build your own bowl with your choice of grains, proteins, and fresh toppings</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Roasted Cauliflower and Chickpea Bowl</div>
+                    <div class="menu-description">Build your own bowl with your choice of grains, proteins, and fresh toppings</div>
+                </div>
+            </div>
+
+            <div class="menu-type">
+                <h3>Sides</h3>
+                <div class="menu-item">
+                    <div class="menu-title">Tomato Cucumber Salad</div>
+                    <div class="menu-description">A refreshing mix of tomatoes, cucumbers, and herbs with a light vinaigrette</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Pita Chips</div>
+                    <div class="menu-description">Crispy, seasoned pita chips, perfect for dipping or snacking on their own</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review -->
+        <div class="review-section">
+            <h2>Customer Reviews</h2>
+            <form id="post">
+                <fieldset>
+                    <legend>Write a Review</legend>
+                    <p>
+                        <label>Name: </label>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        id="reviewUsername"
+                        placeholder="Enter a username" 
+                        required
+                        />
+                    </p>
+                    <p>
+                        <textarea placeholder="Write a Review" id="reviewCaption" required></textarea>
+                    </p>
+                    <p>
+                        <input type="file" name="userImage" id="reviewImage" accept="image/*" required>
+                    </p>
+                    <p>
+                        <input type="submit">
+                    </p>
+                </fieldset>
+            </form>
+            <section id="postList"></section>
+            <div class="review">
+                <div class="profile">
+                    <img class= "pfp" src="https://media.istockphoto.com/id/1687018104/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=PDi0AqXTtZ6d2Y7ahkMJEraVrC_fYCvx0HW508OWg-4=">
+                    <h4>John Doe</h4>
+                </div>
+                <p>"Such a yummy bowl.The best meal I have had in weeks, the falafel was so well cooked. So lovely and I would eat here again."</p>
+                <img class= "review-image" src="https://img.ccnull.de/1045000/preview/1046506_f33dafde5c3b034da6ed2b7ee947e9bf.jpg">
+            </div>
+            <div class="review">
+                <div class="profile">
+                    <img class= "pfp" src="https://media.istockphoto.com/id/1687018104/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=PDi0AqXTtZ6d2Y7ahkMJEraVrC_fYCvx0HW508OWg-4=">
+                    <h4>Patrick Hill</h4>
+                </div>
+                <p>"The tomato cucumber salad was alright"</p>
+                <img class= "review-image" src="https://live.staticflickr.com/109/314142286_385d9d11cb_b.jpg">
+            </div>
+            <div class="review">
+                <div class="profile">
+                    <img class= "pfp" src="https://media.istockphoto.com/id/1687018104/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=PDi0AqXTtZ6d2Y7ahkMJEraVrC_fYCvx0HW508OWg-4=">
+                    <h4>Atilla</h4>
+                </div>
+                <p>"The pita chips were hard as a rock and completely ruined my meal. They were so cold and did not break when hit against the table. I could not eat it."</p>
+                <img class= "review-image" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/2021-06-22_15_52_21_Prince_Omar_Garlic_Pita_Chips_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg">
+            </div>
+            <section id="postList"></section>
+        </div>
+    </body>
+</html>
