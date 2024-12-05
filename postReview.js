@@ -4,12 +4,23 @@
     // Get values of inputs
     let reviewUsername = document.getElementById("reviewUsername").value;
     let reviewCaption = document.getElementById("reviewCaption").value;
-    let reviewLocation = document.getElementById("reviewLocation").value;
-    // Pass values to addNewPost()
-    addNewPost(reviewUsername, reviewCaption, reviewLocation);
+    let reviewImage = document.getElementById("reviewImage");
+    // Check if an image is uploaded
+    const reviewImageFile = reviewImage.files[0];
+    if (!reviewImageFile) {
+      alert("Please upload an image.");
+      return;
+    }
+    // Read the file and pass it to addNewPost()
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      // Pass values to addNewPost()
+      addNewPost(reviewUsername, reviewCaption, e.target.result);
+    };
+    reader.readAsDataURL(reviewImageFile);
  }
 
- function addNewPost(username, caption, location) {
+ function addNewPost(username, caption, image) {
    // Create the parent post div
    const parDiv = document.createElement('div');
    parDiv.className = 'review';
@@ -28,10 +39,12 @@
    profileDiv.appendChild(displayName);
    // Create an element to display the caption
    const review = document.createElement('p');
-   review.textContent = caption;
+   review.textContent = '"' + caption + '"';
    // Create an image element for the review image
    const reviewImg = document.createElement('img');
+   reviewImg.src = image;
    reviewImg.className = 'review-image';
+   reviewImg.alt = 'userImage';
    // reviewImg.src =
    // Add all child elements (order matters)
    parDiv.appendChild(profileDiv);
