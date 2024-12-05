@@ -173,6 +173,17 @@ h2 {
     text-align: center;
 }
 
+#post {
+    margin: 10px auto;
+    width: 920px;
+    padding: 0px 10px;
+}
+
+textarea {
+    width: 885px;
+    height: 100px;
+  }
+
 .review {
     border-radius: 4px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
