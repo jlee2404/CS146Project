@@ -205,6 +205,13 @@ button:hover {
     color: darkred;
 }
 
+.textsub {
+    color : black;
+    font-style: italic; 
+    text-align: center;
+
+}
+
 .bold{
     font-weight: bold;
 }
