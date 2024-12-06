@@ -155,12 +155,14 @@ button:hover {
     background-color: white;
     display: inline-flex;
     margin: 16px;
+    padding-bottom: 10px;
     border-radius: 4px;
     width: 350px;
     height: 200px;
 }
 
 .foodPlaceTitle {
+    padding-left: 10px;
     text-decoration: none;
     font-size: 30px;
     color: black;
@@ -192,13 +194,11 @@ button:hover {
 
 .main-content {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 600px;
-    margin: 0 auto; 
+    margin: 10px auto; 
     padding: 20px;
     border: 2px solid #333; 
     border-radius: 10px; 
     text-align: center; 
-    background-color: #f9f9f9; 
 }
 
 .text {
@@ -270,7 +270,17 @@ button:hover {
         align-items: center;
     }
 
+    .picContent {
+        margin: auto;
+        height: auto;
+    }
+
     .content {
+        max-width: 800px;
+        flex: auto;
+    }
+
+    .main-content {
         max-width: 800px;
         flex: auto;
     }
@@ -287,6 +297,7 @@ button:hover {
 
     .picContent {
         margin: auto;
+        height: auto;
     }
 
     section {
