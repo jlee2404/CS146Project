@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Piccola Italia Reviews</title>
+        <link rel="stylesheet" href="restaurantStyles.css">
+        <script type="text/javascript" src="./postReview.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">College Eats</a>
+                <ul class="navbar_menu">
+                    <li class="navbar_btn">
+                        <div class="dropdown">
+                            <button>Select College</button>
+                            <div class="dropdown-content">
+                            <a href="stevens.html">Stevens Institute of Technology</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <header>
+            <h1>Piccola Italia</h1>
+            <p>From the garden to the oven, Piccola Italia will keep you coming. Buying the freshest,
+                peak of the season produce is a habit that is closely observed for every meal. Piccola Italia stations including authentic
+                italian dishes such as flatbreads, calzone, sandwiches, pasta, and more.</p>
+                <img class="header-image" alt="Piccola Italia Logo" src="https://api.dineoncampus.com/files/images/9688976f-2c14-4865-9248-6fef4de251cd.png">
+        </header>
+
+        <!-- Menu -->
+        <div class="menu-section">
+            <h2>Menu</h2>
+            <div class="menu-type">
+                <h3>Personal Pizza</h3>
+                <div class="menu-item">
+                    <div class="menu-title">Cheese Pizza</div>
+                    <div class="menu-description">Mozzarella, parmesan, pizza sauce</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Pepperoni Pizza</div>
+                    <div class="menu-description">Mozzarella, pepperoni, parmesan, pizza sauce</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Veggie Pizza</div>
+                    <div class="menu-description">Mozzarella, parmesan, pizza sauce, sauteed mushrooms and squash</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Flatbread</div>
+                    <div class="menu-description">Mozzarella, plum tomatoes, basil, balsamic drizzle</div>
+                </div>
+            </div>
+
+            <div class="menu-type">
+                <h3>Hot Sandwich</h3>
+                <div class="menu-item">
+                    <div class="menu-title">Chicken Parmesan Sub</div>
+                    <div class="menu-description">Hand breaded crispy chicken, topped with mozzarella cheese and zesty marinara sauce
+                        served on an italian roll
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Eggplant Parmesan Sub</div>
+                    <div class="menu-description">Hand breaded crispy eggplant topped with with mozzarella & paremsan cheese and zesty 
+                        marinara sauce served on an italian roll</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Meatball Sub</div>
+                    <div class="menu-description">Beef meatballs topped with mozzerlla cheese and zesty marinara sauce</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Vegan Meatball Sub</div>
+                    <div class="menu-description">Vegan meatballs topped with vegan cheese and zesty marinara sauce</div>
+                </div>
+            </div>
+
+            <div class="menu-type">
+                <h3>Pasta</h3>
+                <div class="menu-item">
+                    <div class="menu-title">Stuffed Shells in Marinara Sauce</div>
+                    <div class="menu-description">Large pasta shells filled with creamy ricotta cheese and herbs, baked in a rich, 
+                        flavorful tomato sauce</div>
+                </div>
+            </div>
+
+            <div class="menu-type">
+                <h3>Sides</h3>
+                <div class="menu-item">
+                    <div class="menu-description">Chicken Noode Soup, Caesar Salad</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review -->
+        <div class="review-section">
+            <h2>Customer Reviews</h2>
+            <form id="post">
+                <fieldset>
+                    <legend>Write a Review</legend>
+                    <p>
+                        <label>Name: </label>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        id="reviewUsername"
+                        placeholder="Enter a username" 
+                        required
+                        />
+                    </p>
+                    <p>
+                        <textarea placeholder="Write a Review" id="reviewCaption" required></textarea>
+                    </p>
+                    <p>
+                        <input type="file" name="userImage" id="reviewImage" accept="image/*" required>
+                    </p>
+                    <p>
+                        <input type="submit">
+                        <input type="reset">
+                    </p>
+                </fieldset>
+            </form>
+            <section id="postList"></section>
+        </div>
+    </body>
+</html>
